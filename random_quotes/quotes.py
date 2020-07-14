@@ -30,5 +30,3 @@ quotes = [
 		"year": "1835-1910"
 	}
 ]
-
-print(type(quotes[0]))
