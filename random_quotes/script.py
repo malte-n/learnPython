@@ -15,5 +15,5 @@ while (x <= 20) and quotes_iter:
         quotes_iter = quotes[:]
     else:
         print(quotes_iter.pop(random.randint(0, len(quotes_iter) - 1)))
+
 # Each quote has to be displayed once for 30s
-# before the loop starts over
