@@ -1,10 +1,7 @@
-// event listener to trigger the first quote when the page loads
-//window.addEventListener('load', printQuote, false);
+// Assumed to make an ajax request. Afte
+// I assume the index.html loaded and the quotes.js is created anew,
+// the script.js does not have access to it anymore.
 
-// event listener to respond to clicks on the page
-// when user clicks anywhere on the page, the "makeQuote" function is called
-
-//document.getElementById('loadQuote').addEventListener("click", printQuote, false);
 
 //New qoute generated after timeout
 const refreshTimer = () => intervalId  = setTimeout(printQuote, 30000);

@@ -1,1 +1,1 @@
-{"quote": "Any man who is under 30, and is not a liberal, has no heart; and any man who is over 30, and is not a conservative, has no brains.", "source": "Sir Winston Churchill", "citation": "", "year": "1874-1965"}
+{"quote": "A lie gets halfway around the world before the truth has a chance to get its pants on.", "source": "Sir Winston Churchill", "citation": "", "year": "1874-1965"}
