@@ -1,2 +1,2 @@
 # learnPython
-This repo includes several Jupyter Notebooks I use to teach myself pandas. Some input comes from teamtreehouse and others is created by myself.
+This repo is full of python exercises with different libraries and frameworks. Some input comes from teamtreehouse.com, stuff I found on the internet and tried for myself others is created by myself.
