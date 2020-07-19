@@ -1,4 +1,5 @@
 from random import randint, choice
+from math import factorial
 
 class Die:
     def __init__(self, sides=0):
@@ -13,11 +14,18 @@ class Die:
 
     def lottery_list(self):
         list_of_lottery_options = ['1', '2', '3','4','5','6','7','8','9','10','a','b','c','d','e']
-
-
         my_ticket=['4', 'a', '8', '2']
         selected_options = []
         number_of_runs = 0
+
+
+        def npermutations(l):
+            length_of_options = len(l)
+            length_of_code = len(my_ticket)
+            num = factorial(length_of_options)
+            den = factorial(length_of_options-length_of_code)
+            return int(num/den)
+
 
         def find_matching_lotto():
             x = 0
@@ -36,8 +44,9 @@ class Die:
             find_matching_lotto()
             number_of_runs += 1
 
-        print(f"You have won! It ran {number_of_runs}.")
+        probability = npermutations(list_of_lottery_options)
 
+        print(f"You have won! It ran {number_of_runs}. The probability was 1/{probability}.")
 
 die_6 = Die(20)
 
