@@ -9,21 +9,35 @@ class Die:
         rolled_die = randint(1, self.sides)
         print(rolled_die)
 
+
+
     def lottery_list(self):
         list_of_lottery_options = ['1', '2', '3','4','5','6','7','8','9','10','a','b','c','d','e']
-        list_of_lottery_options_copy = list_of_lottery_options[:]
 
+
+        my_ticket=['4', 'a', '8', '2']
         selected_options = []
-        
-        x = 0
-        while x < 4:
-            index_to_pop = randint(0, (len(list_of_lottery_options_copy)-1))
-            selected_option = list_of_lottery_options_copy.pop(index_to_pop)
-            selected_options.append(selected_option)
-            x = x + 1
-        print(f"The ticket with the following Values wins: {selected_options[0]}, {selected_options[1]}, {selected_options[2]}, {selected_options[3]}")
-        selected_options.clear()
-        list_of_lottery_options_copy.clear()
+        number_of_runs = 0
+
+        def find_matching_lotto():
+            x = 0
+            selected_options.clear()
+            list_of_lottery_options_copy = list_of_lottery_options[:]
+            while x < 4:
+
+                index_to_pop = randint(0, (len(list_of_lottery_options_copy)-1))
+                selected_option = list_of_lottery_options_copy.pop(index_to_pop)
+                selected_options.append(selected_option)
+                x = x + 1
+            print(f"The ticket with the following Values wins: {selected_options[0]}, {selected_options[1]}, {selected_options[2]}, {selected_options[3]}")
+            list_of_lottery_options_copy.clear()
+
+        while my_ticket != selected_options:
+            find_matching_lotto()
+            number_of_runs += 1
+
+        print(f"You have won! It ran {number_of_runs}.")
+
 
 die_6 = Die(20)
 
