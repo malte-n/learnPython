@@ -16,7 +16,7 @@ class User:
         )
 
 
-class Priviledges:
+class AdminPriviledges:
     def __init__(self, priviledges=""):
         self.priviledges = ["can add post", "can delete post", "can ban user"]
 
@@ -28,17 +28,18 @@ class Priviledges:
 class Admin(User):
     def __init__(self, first_name="", last_name=""):
         super().__init__(first_name, last_name)
-        self.priviledges = Priviledges()
+        self.priviledges = AdminPriviledges()
 
 
 jose = Admin(first_name="Jose")
 
 jose.greet_user()
 
-jan = User(first_name="Jan", last_name="Kowalski")
+jan = Admin(first_name="Jan", last_name="Kowalski")
 jan.describe_user()
 jan.greet_user()
-jose.priviledges.show_priviledges()
+
+jan.priviledges.show_priviledges()
 
 restaurant = Restaurant("Stelzer", "German")
 print(restaurant.cuisine_type)
