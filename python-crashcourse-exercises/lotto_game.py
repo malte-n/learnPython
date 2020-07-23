@@ -53,8 +53,3 @@ def getUserLottoTicket():
     runLotto.lottery_list()
 
 getUserLottoTicket()
-
-
-
-class DieUnitTest:
-    pass
