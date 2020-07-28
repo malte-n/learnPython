@@ -1,0 +1,5 @@
+migrations/
+__pycache__/
+ll_env/
+db.sqlite3
+manage.py
