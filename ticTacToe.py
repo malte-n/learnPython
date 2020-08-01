@@ -46,6 +46,9 @@ def game():
             if move not in board_values:
                 board_values.append(move)
 
+            print(len(board_values))
+            print(board_values)
+
             print(theBoard[move])
             if theBoard[move] == " ":
                 theBoard[move] = turn
