@@ -39,12 +39,16 @@ columns = [
 product_list = [product for product in products]
 weights = [products[product][1] for product in products]
 
-for product in products:
-    print(products[product][1])
-    # print(products[product][0])
-
-
 n = 5
 
-for number in n:
-    print(number ** 2)
+for _ in range(n):
+    print(_)
+
+list = [1, 2, 3, 4, 5, 6, 7, 8]
+
+def sum_of_squares(v):
+    #square = [i ** 2 for i in v]
+    #print(square)
+    return sum([i ** 2 for i in v])
+
+print(sum_of_squares(list))
