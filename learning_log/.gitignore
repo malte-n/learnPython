@@ -1,5 +1,4 @@
-migrations/
 __pycache__/
 ll_env/
 *.sqlite3
-manage.py
+.DS_Store
