@@ -39,7 +39,7 @@ for name, count in itertools.zip_longest(names, counts):
         longest_name = name
 
 
-# item 10: assignment expression
+# item 10: assignment expression (you assign and assert in one line)
 # a := b
 
 fresh_fruit = {
